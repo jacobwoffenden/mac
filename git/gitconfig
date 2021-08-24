@@ -1,5 +1,5 @@
 [user]
   name = Jacob Woffenden
   email = jacob@woffenden.io
-  signingKey = FC9B5C14AD0AD26BD8BEB441479048397210A2EF
+  signingKey = 0x479048397210A2EF
   gpgSign = true
