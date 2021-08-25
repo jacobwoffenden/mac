@@ -1,3 +1,4 @@
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 
 brew "git-crypt"
@@ -9,6 +10,7 @@ brew "ykman"
 cask "1password"
 cask "aws-vault"
 cask "bartender"
+cask "displaylink"
 cask "docker"
 cask "font-jetbrains-mono"
 cask "gpg-suite-no-mail"
