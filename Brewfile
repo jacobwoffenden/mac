@@ -4,6 +4,7 @@ tap "homebrew/cask-fonts"
 brew "git-crypt"
 brew "kube-ps1"
 brew "kubernetes-cli"
+brew "node"
 brew "pinentry-mac"
 brew "ykman"
 
