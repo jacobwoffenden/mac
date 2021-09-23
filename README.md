@@ -26,7 +26,13 @@ xcode-select --install
 git clone https://github.com/jacobwoffenden/mac.git
 ```
 
-5. Import and Trust GPG Public Key
+5. Run Brew Bundle
+
+```
+brew bundle --file mac/Brewfile
+```
+
+6. Import and Trust GPG Public Key
 
 ```
 gpg --import mac/gnupg/jacob@woffenden.io.asc
@@ -34,12 +40,6 @@ gpg --edit-key jacob@woffenden.io
 trust
 5
 y
-```
-
-6. Run Brew Bundle
-
-```
-brew bundle --file mac/Brewfile
 ```
 
 7. Create Directories
