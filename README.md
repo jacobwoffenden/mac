@@ -2,7 +2,7 @@
 
 Things to do when getting a Mac
 
-1. Install Xcode Tools
+1. Install macOS Tools
 
 ```
 xcode-select --install
