@@ -3,3 +3,5 @@
   email = jacob@woffenden.io
   signingKey = 0x479048397210A2EF
   gpgSign = true
+[pull]
+	rebase = false
