@@ -1,65 +1,49 @@
 # mac
 
-Things to do when getting a Mac
-
-1. Install Xcode Tools
-
 ```
+# Determime system architecture
+if [[ "$( uname -m )" == "arm64" ]]; then
+  export APPLE_SILICON="true"
+  export BREW_BINARY="/opt/homebrew/bin/brew"
+else
+  export APPLE_SILICON="false"
+  export BREW_BINARY="brew"
+fi
+
+# Install Xcode
 xcode-select --install
-```
 
-2. Install Homebrew
+# Install Rosetta 2
+if [[ "${APPLE_SILICON}" == "true" ]]; then
+  softwareupdate --install-rosetta --agree-to-license
+fi
 
-```
+# Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
 
-3. Install OhMyZSH
-
-```
+# Install Oh My ZSH
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
 
-4. Clone Repository
-
-```
+# Clone mac repo
 git clone https://github.com/jacobwoffenden/mac.git
-```
 
-5. Run Brew Bundle
+# Run Brew
+${BREW_BINARY} bundle --file mac/Brewfile.{personal|work}
 
-```
-brew bundle --file mac/Brewfile
-```
-
-6. Import and Trust GPG Public Key
-
-```
+# Import and Trust GPG Public Key
 gpg --import mac/gnupg/jacob@woffenden.io.asc
 gpg --edit-key jacob@woffenden.io
 trust
 5
 y
-```
 
-7. Create Directories
-
-```
-mkdir -p ${HOME}/.kube
-mkdir -p ${HOME}/.ssh
-chmod 700 ${HOME}/.ssh
-```
-
-8. Copy Configurations
-
-```
-# ZSH
+# Create ZSH Configuration
 cp mac/zsh/zshrc ${HOME}/.zshrc
 
-# GPG
+# Create GPG Configuration
 cp mac/gnupg/gpg.conf ${HOME}/.gnupg/gpg.conf
 cp mac/gnupg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf
 
-# Git Configuration
+# Create Git Configuration
 cp mac/git/gitconfig ${HOME}/.gitconfig
 ```

@@ -1,0 +1,14 @@
+tap "homebrew/cask-fonts"
+
+brew "git-crypt"
+brew "pinentry-mac"
+brew "ykman"
+
+# cask "1password"
+cask "docker"
+cask "font-jetbrains-mono"
+cask "gpg-suite-no-mail"
+# cask "google-chrome"
+cask "iterm2"
+cask "lens"
+cask "visual-studio-code"
