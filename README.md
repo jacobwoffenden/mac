@@ -28,7 +28,7 @@ fi
 git clone https://github.com/jacobwoffenden/mac.git
 
 # Run Brew
-${BREW_BINARY} bundle --file mac/Brewfile.personal
+${BREW_BINARY} bundle --file mac/Brewfile.{personal|work}
 
 # Import and Trust GPG Public Key
 gpg --import mac/gnupg/jacob@woffenden.io.asc
@@ -46,5 +46,4 @@ cp mac/gnupg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf
 
 # Create Git Configuration
 cp mac/git/gitconfig ${HOME}/.gitconfig
-
 ```
