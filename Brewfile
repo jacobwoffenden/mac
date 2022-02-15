@@ -6,6 +6,7 @@ brew "ykman"
 
 cask "1password"
 cask "bartender"
+cask "cloudflare-warp"
 cask "docker"
 cask "font-jetbrains-mono"
 cask "gpg-suite-no-mail"
