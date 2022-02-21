@@ -21,3 +21,10 @@ fi
 export GPG_TTY="$( tty )"
 export SSH_AUTH_SOCK="$( gpgconf --list-dirs agent-ssh-socket )"
 gpgconf --launch gpg-agent
+
+##################################################
+# Aliases
+##################################################
+alias dockerNukeContainers='docker rm -f $( docker ps -a -q )'
+alias dockerNukeImages='docker rmi -f $( docker image ls -q )'
+alias dockerDeleteDanglingImages='docker rmi -f $( docker images -q -f "dangling=true"  )'
