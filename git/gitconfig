@@ -1,7 +1,13 @@
 [user]
   name = Jacob Woffenden
   email = jacob@woffenden.io
-  signingKey = 0x479048397210A2EF
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIdKi+qbG6K6zoU1/Vvg5tA1xdyg9OlPVcOlMe4MZI3o
   gpgSign = true
 [pull]
 	rebase = false
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
