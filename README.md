@@ -55,6 +55,15 @@
     ```bash
     ${BREW_BINARY} bundle --file ${HOME}/Code/github.com/jacobwoffenden/mac/Brewfile
     ```
+1. Install NPM Packages
+
+    ```bash 
+    npm install --global npm@latest
+    ```
+
+    ```bash
+    npm install --global @devcontainers/cli
+    ```
 
 1. Create ZSH Configuration
 
