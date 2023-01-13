@@ -54,7 +54,10 @@
 
     ```bash
     ${BREW_BINARY} bundle --file ${HOME}/Code/github.com/jacobwoffenden/mac/Brewfile
+
+    # ${BREW_BINARY} bundle --file ${HOME}/Code/github.com/jacobwoffenden/mac/Brewfile.moj
     ```
+
 1. Install NPM Packages
 
     ```bash 
@@ -75,6 +78,8 @@
 
     ```bash
     cp ${HOME}/Code/github.com/jacobwoffenden/mac/git/gitconfig ${HOME}/.gitconfig
+
+    # cp ${HOME}/Code/github.com/jacobwoffenden/mac/git/gitconfig.moj ${HOME}/.gitconfig
     ```
 
 1. Create Hyper Configuration

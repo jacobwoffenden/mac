@@ -4,7 +4,7 @@
 export ZSH="${HOME}/.oh-my-zsh"
 export ZSH_THEME="robbyrussell"
 plugins=(git)
-source $ZSH/oh-my-zsh.sh
+source ${ZSH}/oh-my-zsh.sh
 
 ##################################################
 # PATH
@@ -13,6 +13,11 @@ if [[ "$( uname -m )" == "arm64" ]]; then
   export APPLE_SILICON="true"
   export PATH="${PATH}:/opt/homebrew/bin:${HOME}/.rd/bin"
 fi
+
+##################################################
+# GitHub
+##################################################
+export GITHUB_USER="jacobwoffenden"
 
 ##################################################
 # GPG
@@ -30,4 +35,4 @@ export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agen
 ##################################################
 alias dockerNukeContainers='docker rm -f $( docker ps -a -q )'
 alias dockerNukeImages='docker rmi -f $( docker image ls -q )'
-alias dockerDeleteDanglingImages='docker rmi -f $( docker images -q -f "dangling=true"  )'
+alias dockerNukeDanglingImages='docker rmi -f $( docker images -q -f "dangling=true"  )'
