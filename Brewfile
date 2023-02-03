@@ -1,7 +1,6 @@
 tap "homebrew/cask-fonts"
 
 brew "gh"
-brew "node"
 brew "pinentry-mac"
 brew "ykman"
 

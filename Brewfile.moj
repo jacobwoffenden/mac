@@ -1,6 +1,5 @@
 tap "homebrew/cask-fonts"
 
-brew "node"
 brew "pinentry-mac"
 
 cask "1password"

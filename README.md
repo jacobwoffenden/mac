@@ -29,13 +29,13 @@
 1. Install Homebrew
 
     ```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /bin/bash -c "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh )"
     ```
 
 1. Install Oh My Zsh
 
     ```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    /bin/bash -c "$( curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh )"
     ```
 
 1. Create Directory
@@ -56,16 +56,6 @@
     ${BREW_BINARY} bundle --file ${HOME}/Code/github.com/jacobwoffenden/mac/Brewfile
 
     # ${BREW_BINARY} bundle --file ${HOME}/Code/github.com/jacobwoffenden/mac/Brewfile.moj
-    ```
-
-1. Install NPM Packages
-
-    ```bash 
-    npm install --global npm@latest
-    ```
-
-    ```bash
-    npm install --global @devcontainers/cli
     ```
 
 1. Create ZSH Configuration
