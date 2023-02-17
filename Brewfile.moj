@@ -1,10 +1,13 @@
 tap "homebrew/cask-fonts"
 
+brew "gh"
 brew "pinentry-mac"
+brew "ykman"
 
 cask "1password"
 cask "1password-cli"
 cask "bartender"
+cask "drawio"
 cask "font-jetbrains-mono"
 cask "gpg-suite-no-mail"
 cask "hyper"
