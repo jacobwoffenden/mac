@@ -41,54 +41,54 @@
 1. Create Directory
 
     ```bash
-    mkdir -p ${HOME}/Code/github.com/jacobwoffenden
+    mkdir -p ${HOME}/Developer/github.com/jacobwoffenden
     ```
 
 1. Clone Repository
 
     ```bash
-    git clone https://github.com/jacobwoffenden/mac.git ${HOME}/Code/github.com/jacobwoffenden/mac
+    git clone https://github.com/jacobwoffenden/mac.git ${HOME}/Developer/github.com/jacobwoffenden/mac
     ```
 
 1. Install Brew Packages
 
     ```bash
-    ${BREW_BINARY} bundle --file ${HOME}/Code/github.com/jacobwoffenden/mac/Brewfile
+    ${BREW_BINARY} bundle --file ${HOME}/Developer/github.com/jacobwoffenden/mac/Brewfile
 
-    # ${BREW_BINARY} bundle --file ${HOME}/Code/github.com/jacobwoffenden/mac/Brewfile.moj
+    # ${BREW_BINARY} bundle --file ${HOME}/Developer/github.com/jacobwoffenden/mac/Brewfile.moj
     ```
 
 1. Create ZSH Configuration
 
     ```bash
-    cp ${HOME}/Code/github.com/jacobwoffenden/mac/zsh/zshrc ${HOME}/.zshrc
+    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/zsh/zshrc ${HOME}/.zshrc
     ```
 
 1. Create Git Configuration
 
     ```bash
-    cp ${HOME}/Code/github.com/jacobwoffenden/mac/git/gitconfig ${HOME}/.gitconfig
+    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/git/gitconfig ${HOME}/.gitconfig
 
-    # cp ${HOME}/Code/github.com/jacobwoffenden/mac/git/gitconfig.moj ${HOME}/.gitconfig
+    # cp ${HOME}/Developer/github.com/jacobwoffenden/mac/git/gitconfig.moj ${HOME}/.gitconfig
     ```
 
 1. Create Hyper Configuration
 
     ```bash
-    cp ${HOME}/Code/github.com/jacobwoffenden/mac/hyper/hyper.js ${HOME}/.hyper.js
+    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/hyper/hyper.js ${HOME}/.hyper.js
     ```
 
 1. Create GPG Configuration
 
     ```bash
-    cp ${HOME}/Code/github.com/jacobwoffenden/mac/gnupg/gpg.conf ${HOME}/.gnupg/gpg.conf
-    cp ${HOME}/Code/github.com/jacobwoffenden/mac/gnupg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf
+    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/gnupg/gpg.conf ${HOME}/.gnupg/gpg.conf
+    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/gnupg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf
     ```
 
 1. Import and Trust GPG Public Key
 
     ```bash
-    gpg --import ${HOME}/Code/github.com/jacobwoffenden/mac/gnupg/jacob@woffenden.io.asc
+    gpg --import ${HOME}/Developer/github.com/jacobwoffenden/mac/gnupg/jacob@woffenden.io.asc
     gpg --edit-key jacob@woffenden.io
     trust
     5

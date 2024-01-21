@@ -5,6 +5,7 @@ brew "pinentry-mac"
 brew "ykman"
 
 cask "1password"
+cask "arc"
 cask "bartender"
 cask "cloudflare-warp"
 cask "font-jetbrains-mono"
