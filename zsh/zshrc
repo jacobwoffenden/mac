@@ -11,7 +11,7 @@ source ${ZSH}/oh-my-zsh.sh
 ##################################################
 if [[ "$( uname -m )" == "arm64" ]]; then
   export APPLE_SILICON="true"
-  export PATH="${PATH}:/opt/homebrew/bin:${HOME}/.rd/bin"
+  export PATH="${PATH}:/opt/homebrew/bin"
 fi
 
 ##################################################

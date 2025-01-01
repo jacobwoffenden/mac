@@ -1,6 +1,6 @@
 [user]
   name = Jacob Woffenden
-  email = jacob.woffenden@digital.justice.gov.uk
+  email = jacob.woffenden@justice.gov.uk
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIdKi+qbG6K6zoU1/Vvg5tA1xdyg9OlPVcOlMe4MZI3o
   gpgSign = true
 [pull]

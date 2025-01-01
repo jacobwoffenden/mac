@@ -72,10 +72,10 @@
     # cp ${HOME}/Developer/github.com/jacobwoffenden/mac/git/gitconfig.moj ${HOME}/.gitconfig
     ```
 
-1. Create Hyper Configuration
+1. Create Ghostty Configuration
 
     ```bash
-    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/hyper/hyper.js ${HOME}/.hyper.js
+    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/ghostty/config ${HOME}/Library/Application\ Support/com.mitchellh.ghostty/config
     ```
 
 1. Create GPG Configuration
