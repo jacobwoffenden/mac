@@ -52,11 +52,17 @@
 
 1. Install Brew Packages
 
-    ```bash
-    ${BREW_BINARY} bundle --file ${HOME}/Developer/github.com/jacobwoffenden/mac/Brewfile
+    * Personal
 
-    # ${BREW_BINARY} bundle --file ${HOME}/Developer/github.com/jacobwoffenden/mac/Brewfile.moj
-    ```
+        ```bash
+        ${BREW_BINARY} bundle --file ${HOME}/Developer/github.com/jacobwoffenden/mac/Brewfile
+        ```
+
+    * Work
+
+        ```bash
+        ${BREW_BINARY} bundle --file ${HOME}/Developer/github.com/jacobwoffenden/mac/Brewfile.moj
+        ```
 
 1. Create ZSH Configuration
 
@@ -66,31 +72,22 @@
 
 1. Create Git Configuration
 
-    ```bash
-    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/git/gitconfig ${HOME}/.gitconfig
+    * Personal
 
-    # cp ${HOME}/Developer/github.com/jacobwoffenden/mac/git/gitconfig.moj ${HOME}/.gitconfig
-    ```
+        ```bash
+        cp ${HOME}/Developer/github.com/jacobwoffenden/mac/git/gitconfig ${HOME}/.gitconfig
+        ```
+
+    * Work
+
+        ```bash
+        cp ${HOME}/Developer/github.com/jacobwoffenden/mac/git/gitconfig.moj ${HOME}/.gitconfig
+        ```
 
 1. Create Ghostty Configuration
 
     ```bash
+    mkdir -p ${HOME}/Library/Application\ Support/com.mitchellh.ghostty/config
+    
     cp ${HOME}/Developer/github.com/jacobwoffenden/mac/ghostty/config ${HOME}/Library/Application\ Support/com.mitchellh.ghostty/config
-    ```
-
-1. Create GPG Configuration
-
-    ```bash
-    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/gnupg/gpg.conf ${HOME}/.gnupg/gpg.conf
-    cp ${HOME}/Developer/github.com/jacobwoffenden/mac/gnupg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf
-    ```
-
-1. Import and Trust GPG Public Key
-
-    ```bash
-    gpg --import ${HOME}/Developer/github.com/jacobwoffenden/mac/gnupg/jacob@woffenden.io.asc
-    gpg --edit-key jacob@woffenden.io
-    trust
-    5
-    y
     ```
