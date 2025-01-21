@@ -1,11 +1,12 @@
 brew "gh"
 
 cask "1password"
+cask "arc"
 cask "bartender"
 cask "chatgpt"
 cask "cloudflare-warp"
 cask "ghostty"
-cask "mimestream"
+cask "google-drive"
 cask "notion"
 cask "notion-calendar"
 cask "raycast"
